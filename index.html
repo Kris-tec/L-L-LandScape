@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Essence Landscaping & Excavation</title>
+
+  <meta name="description" content="Professional landscaping, mowing, rock wall, and excavation services.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(10, 10, 10, 0.95);
+      border-bottom: 1px solid #333;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #8faa45;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #9dbb4d;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 25px 60px;
+      background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+        radial-gradient(circle at center, #39452b, #111 65%);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 8vw, 82px);
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #9dbb4d;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ddd;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 28px;
+      margin: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    .primary {
+      background: #8faa45;
+      color: #111;
+    }
+
+    .primary:hover {
+      background: #a8c95a;
+      transform: translateY(-2px);
+    }
+
+    .secondary {
+      border: 1px solid #aaa;
+      color: white;
+    }
+
+    .secondary:hover {
+      background: white;
+      color: #111;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 90px 25px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #aaa;
+    }
+
+    .services {
+      background: #151515;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service {
+      background: #202020;
+      padding: 35px 25px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      transition: .2s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      border-color: #8faa45;
+    }
+
+    .service h3 {
+      color: #9dbb4d;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .service p {
+      color: #bbb;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .about p {
+      color: #ccc;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: #202020;
+      text-align: center;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+    }
+
+    .cta h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #bbb;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      background: #090909;
+      color: #888;
+    }
+
+    @media (max-width: 800px) {
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero {
+        padding-top: 160px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">ESSENCE <span>LANDSCAPING</span></div>
+
+      <div>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+
+        <h1>
+          Built for the <span>Ground</span>.
+        </h1>
+
+        <p>
+          Professional landscaping, rock wall, mowing, and excavation services.
+          Quality work. Reliable service. Built to last.
+        </p>
+
+        <a href="#contact" class="button primary">
+          Get a Free Quote
+        </a>
+
+        <a href="#services" class="button secondary">
+          Our Services
+        </a>
+
+      </div>
+    </section>
+
+    <section id="services">
+
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>From maintaining your property to transforming the land.</p>
+      </div>
+
+      <div class="service-grid">
+
+        <div class="service">
+          <h3>Landscaping & Mowing</h3>
+          <p>
+            Professional lawn mowing and property maintenance
+            to keep your property looking clean and maintained.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Rock Walls</h3>
+          <p>
+            Durable rock wall construction designed to improve
+            the look, structure, and function of your property.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Excavation</h3>
+          <p>
+            Ground preparation, digging, grading, and excavation
+            work for residential and property improvement projects.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="about">
+
+      <div class="section-title">
+        <h2>Why Essence?</h2>
+      </div>
+
+      <div class="about-content">
+
+        <p>
+          We take pride in doing the job right. Whether it's
+          maintaining your lawn, building a rock wall, or moving
+          earth for a larger project, our goal is simple:
+          dependable work you can be proud of.
+        </p>
+
+        <p>
+          Serving homeowners and property owners with professional
+          landscaping and excavation services.
+        </p>
+
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+
+      <h2>Ready to Start Your Project?</h2>
+
+      <p>
+        Contact us today for a free estimate.
+      </p>
+
+      <a href="tel:YOURPHONE" class="button primary">
+        Call for a Quote
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Essence Landscaping & Excavation. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
