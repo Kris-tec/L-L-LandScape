@@ -297,15 +297,36 @@
     }
 
     .project-placeholder {
-      min-height: 230px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background:
-        linear-gradient(rgba(47, 111, 228, 0.10), rgba(0, 0, 0, 0.45)),
-        #171717;
-      color: #888;
-      font-size: 17px;
+  height: 300px;
+  overflow: hidden;
+  background: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: #888;
+}
+
+.placeholder-content span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.placeholder-content h3 {
+  margin-top: 10px;
+  color: white;
+}
     }
 
     .project-card h3 {
@@ -645,56 +666,64 @@
 
     </section>
 
+<!-- PROJECTS -->
 
-    <!-- PROJECTS -->
+<section id="projects">
 
-    <section id="projects">
+  <div class="section-title">
 
-      <div class="section-title">
+    <h2>Project Examples</h2>
 
-        <h2>Our Work</h2>
+    <p>
+      Examples of the landscaping and excavation work we provide.
+    </p>
 
-        <p>
-          A look at some of our landscaping and excavation projects.
-        </p>
+  </div>
 
+  <div class="project-grid">
+
+    <div class="project-card">
+
+      <div class="project-placeholder">
+        <img
+          src="retaining-wall.jpg.png"
+          alt="Rock retaining wall example"
+        >
       </div>
 
-      <div class="project-grid">
+      <h3>Rock Walls</h3>
 
-        <div class="project-card">
+    </div>
 
-          <div class="project-placeholder">
-            Project Photo
-          </div>
+    <div class="project-card">
 
-          <h3>Rock Walls</h3>
-
-        </div>
-
-        <div class="project-card">
-
-          <div class="project-placeholder">
-            Project Photo
-          </div>
-
-          <h3>Landscaping</h3>
-
-        </div>
-
-        <div class="project-card">
-
-          <div class="project-placeholder">
-            Project Photo
-          </div>
-
-          <h3>Excavation & Grading</h3>
-
-        </div>
-
+      <div class="project-placeholder">
+        <img
+          src="excavation-grading.jpg.png"
+          alt="Excavation and grading example"
+        >
       </div>
 
-    </section>
+      <h3>Excavation & Grading</h3>
+
+    </div>
+
+    <div class="project-card">
+
+      <div class="project-placeholder">
+        <div class="placeholder-content">
+          <span>COMING SOON</span>
+          <h3>More Projects</h3>
+        </div>
+      </div>
+
+      <h3>Landscaping</h3>
+
+    </div>
+
+  </div>
+
+</section>
 
 
     <!-- CONTACT / CTA -->
